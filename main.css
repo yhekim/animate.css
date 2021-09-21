@@ -1,0 +1,262 @@
+                                         :root {
+                                            --root-background: #fce5cd;
+                                            --root-sidebar: #f7d7b5;
+                                            --root-subtitle: #e69138;
+                                            --root-title: #351C75;
+                                            --pre-color: #2D2D2D;
+                                        }
+                                        
+                                        * {
+                                            scroll-behavior: smooth;
+                                            padding: 0;
+                                            margin: 0;
+                                            box-sizing: border-box;
+                                            list-style: none;
+                                            border: 0;
+                                            outline: 0;
+                                            text-decoration: none;
+                                            -webkit-font-smoothing: antialiased;
+                                            -webkit-overflow-scrolling: touch;
+                                            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                                        }
+                                        
+                                        h1 {
+                                            font-size: 60px;
+                                            font-weight: 800;
+                                            color: var(--root-title);
+                                            letter-spacing: .4px;
+                                        }
+                                        
+                                        h2 {
+                                            font-size: 25px;
+                                            font-weight: 700;
+                                            color: var(--root-subtitle);
+                                            letter-spacing: .4px;
+                                        }
+                                        
+                                        h3 {
+                                            font-size: 18px;
+                                            letter-spacing: .3px;
+                                            font-weight: 800;
+                                        }
+                                        
+                                        a {
+                                            text-decoration: underline;
+                                            color: var(--root-title);
+                                        }
+                                        
+                                        .intro {
+                                            width: 100%;
+                                            height: calc(100vh - 50px);
+                                            background-color: var(--root-background);
+                                            display: grid;
+                                            grid-template-columns: [intro-left] 1fr [intro-sidebar] 250px;
+                                            grid-template-areas: "intro-left intro-sidebar" "intro-footer intro-sidebar";
+                                            grid-template-rows: 1fr auto;
+                                        }
+                                        
+                                        .intro-left {
+                                            grid-area: intro-left;
+                                            align-self: center;
+                                            justify-self: center;
+                                            text-align: center;
+                                        }
+                                        
+                                        .intro-left h1 {
+                                            padding-bottom: 10px;
+                                        }
+                                        
+                                        .intro-sidebar {
+                                            grid-area: intro-sidebar;
+                                            background-color: var(--root-sidebar);
+                                            padding: 25px;
+                                            overflow: auto;
+                                        }
+                                        
+                                        .intro-sidebar section h3 {
+                                            padding-bottom: 14px;
+                                        }
+                                        
+                                        .intro-sidebar section:not(:last-child) {
+                                            margin-bottom: 10px;
+                                        }
+                                        
+                                        .intro-sidebar section ul li a {
+                                            display: block;
+                                            padding: 2px 0;
+                                            text-decoration: none;
+                                            font-weight: 300;
+                                            font-size: 18px;
+                                            color: #333;
+                                        }
+                                        
+                                        .intro-footer {
+                                            grid-area: intro-footer;
+                                            text-align: center;
+                                            font-size: 14px;
+                                            letter-spacing: .5px;
+                                            padding-bottom: 40px;
+                                            color: #333;
+                                        }
+                                        /* Alt Bölüm */
+                                        
+                                        main header {
+                                            background-color: var(--root-title);
+                                        }
+                                        
+                                        main header .container {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1100px 2fr;
+                                            height: 50px;
+                                        }
+                                        
+                                        main header .container h2 {
+                                            grid-column: 2/3;
+                                            align-self: center;
+                                        }
+                                        
+                                        main header .container h2 a {
+                                            color: var(--root-subtitle);
+                                            text-decoration: none;
+                                        }
+                                        /* alt bölüm */
+                                        
+                                        main .docs .container {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1100px 2fr;
+                                        }
+                                        
+                                        main .docs .content {
+                                            grid-column: 2/3;
+                                        }
+                                        
+                                        main .docs .content {
+                                            grid-column: 2/3;
+                                            padding: 30px 30px 30px 0;
+                                            line-height: 150%;
+                                        }
+                                        
+                                        main .docs .content p {
+                                            margin-bottom: 25px;
+                                        }
+                                        
+                                        main .docs .content pre {
+                                            background-color: var(--pre-color);
+                                            margin-bottom: 25px;
+                                            padding: 10px;
+                                            border-radius: 5px;
+                                            color: #fff;
+                                            font-family: Monaco, Consolas;
+                                        }
+                                        
+                                        main .docs .content h2 {
+                                            font-size: 40px;
+                                            color: var(--root-title);
+                                            margin-bottom: 30px;
+                                            letter-spacing: 2px;
+                                        }
+                                        
+                                        main .docs .content h3 {
+                                            font-size: 26px;
+                                            letter-spacing: 2px;
+                                            color: var(--root-title);
+                                            margin-bottom: 10px;
+                                        }
+                                        
+                                        main .docs .content code {
+                                            font-family: Monaco, Consolas;
+                                            background-color: var(--root-background);
+                                            font-size: 18px;
+                                        }
+                                        
+                                        main .docs .content section {
+                                            scroll-margin: 25px;
+                                        }
+                                        
+                                        main .docs .content section:not(:last-child) {
+                                            border: 1px solid #eaeaea;
+                                            border-radius: 5px;
+                                            padding: 10px 10px 25px 10px;
+                                            margin-bottom: 25px;
+                                        }
+                                        
+                                        main .docs .content blockquote {
+                                            border-left: 5px solid var(--root-subtitle);
+                                            padding: 10px 20px;
+                                            margin-bottom: 25px;
+                                        }
+                                        
+                                        main .docs .content table {
+                                            margin-bottom: 30px;
+                                        }
+                                        
+                                        main .docs .content table thead tr th img {
+                                            width: 150px;
+                                            height: 150px;
+                                            border-radius: 50%;
+                                            margin: 40px 40px 10px 40px;
+                                        }
+                                        
+                                        main .docs .content table tbody tr td {
+                                            margin-bottom: 5px;
+                                        }
+                                        
+                                        main .docs .content table tbody tr td h5,
+                                        main .docs .content table tbody tr td a {
+                                            font-size: 24px;
+                                            margin-left: 40px;
+                                            color: gray;
+                                            padding: 5px;
+                                        }
+                                        
+                                        main .docs .container .sidebar {
+                                            grid-column: 3/3;
+                                        }
+                                        
+                                        main .docs .container .sidebar {
+                                            grid-column: 3/3;
+                                            background-color: var(--root-sidebar);
+                                            padding: 25px 40px;
+                                            font-size: 18px;
+                                        }
+                                        
+                                        main .docs .container .sidebar .version {
+                                            margin-bottom: 20px;
+                                            font-size: 18px;
+                                        }
+                                        
+                                        main .docs .container .sidebar nav {
+                                            position: sticky;
+                                            top: 25px;
+                                        }
+                                        
+                                        main .docs .container .sidebar nav ul li {
+                                            margin-bottom: 5px;
+                                        }
+                                        
+                                        main .docs .container .sidebar nav ul li a {
+                                            display: block;
+                                            padding: 2px 0;
+                                            font-size: 18px;
+                                        }
+                                        /* footer */
+                                        
+                                        main footer {
+                                            display: grid;
+                                            grid-template-columns: 1fr/1fr;
+                                            grid-template-areas: "footer";
+                                            background-color: var(--root-title);
+                                            color: var(--root-subtitle);
+                                            text-align: center;
+                                            padding: 15px 0;
+                                            border-radius: 3px;
+                                            position: sticky;
+                                            bottom: 0;
+                                        }
+                                        
+                                        main footer p {
+                                            grid-area: footer;
+                                            font-size: 20px;
+                                            font-family: sans-serif;
+                                            letter-spacing: 1px;
+                                        }
