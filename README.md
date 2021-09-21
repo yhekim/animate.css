@@ -10,4 +10,4 @@
 
 - Reset CSS,Grid Properties,box-shodow,transform,transition,Flex structure,using variables
 
-![gif](https://raw.githubusercontent.com/yhekim/Dashboard-Interface/main/dashaboard.gif)
+![gif](https://raw.githubusercontent.com/yhekim/animate.css/main/animate-css.gif)
